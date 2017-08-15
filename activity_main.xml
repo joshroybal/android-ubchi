@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.josh.ubchi.MainActivity">
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/scrollView2"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/add" />
+
+    <Button
+        android:id="@+id/Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Retrieve"
+        android:layout_centerHorizontal="true"
+        android:text="@string/delete" />
+
+    <Button
+        android:id="@+id/Modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Add"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:text="@string/modify" />
+
+    <Button
+        android:id="@+id/Retrieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Add"
+        android:layout_alignStart="@+id/Add"
+        android:layout_below="@+id/Add"
+        android:layout_marginTop="50dp"
+        android:text="@string/retrieve" />
+
+    <Button
+        android:id="@+id/List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Retrieve"
+        android:layout_alignBottom="@+id/Retrieve"
+        android:layout_alignLeft="@+id/Delete"
+        android:layout_alignStart="@+id/Delete"
+        android:text="@string/list" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Retrieve"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="textCapWords|textPersonName" />
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/Name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Phone"
+        android:layout_alignStart="@+id/Phone">
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/Listing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Phone"
+        android:layout_marginTop="13dp" />
+
+    <ListView
+        android:id="@+id/PhoneListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Listing"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:clickable="false" />
+
+</RelativeLayout>
